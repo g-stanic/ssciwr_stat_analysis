@@ -1,8 +1,11 @@
+"""Statistical analysis functions."""
+
 # %% External package import
+
 from numpy import sqrt
 from numpy import sum as nsum
 
-# %% Statistical analysis functions
+# %% Function definitions
 
 
 def correlate(data, method="pearson", drop_cols=None, return_sorted=True):
@@ -65,10 +68,10 @@ def compute_euclidean_distance(x, y):
 
     Parameters
     ----------
-    x : array
+    x : ndarray
         Array with the values of the first vector.
 
-    y : array
+    y : ndarray
         Array with the values of the second vector.
 
     Returns
