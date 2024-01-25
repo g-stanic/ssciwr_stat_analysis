@@ -165,7 +165,7 @@ cython_debug/
 ./results/
 
 # Don't sync the pre-commit hooks
-.pre-commit-config.yaml
+*.yaml
 
 # Don't sync docs/build folder
 ./docs/build/
