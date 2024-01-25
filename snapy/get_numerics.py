@@ -77,6 +77,8 @@ def compute_acf(data, drop_cols=None):
     result.imag = data[:, 1::2]
 
     # Calculate the ACF
-    acf = sum(dot(result[:, 0], result[:, i]) for i in range(result[:,].shape[0]))
+    acf = sum(
+        dot(result[:, 0], result[:, i]) for i in range(result[:,].shape[0])
+    )  # noqa
 
     return acf
