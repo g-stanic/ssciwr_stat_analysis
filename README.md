@@ -1,1 +1,3 @@
-# ssciwr_stat_analysis
+# README
+
+Hi, I am snapy!
