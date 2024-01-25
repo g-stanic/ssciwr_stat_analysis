@@ -6,10 +6,19 @@ import numpy as np
 def pairplot(data, savefile=None):
     """
     Create a pair plot from input data and either show it or save it
-    :param data: Data in the format that is capable of being pairplotted
-    :param savefile: If True saving takes place, if False only visualization.
-     Arg is the filepath
-    :return:
+
+    Parameters
+    ----------
+    data : Dataframe
+        Data in the format that is capable of being pair-plotted.
+
+    savefile : string or None
+        If string saving takes place, if None only visualization.
+        The argument is supposed to be a filepath together with the filename.
+
+    Returns
+    -------
+    Plots or saves the graph based on the savefile argument
     """
     # Create a pairplot
     seaborn.pairplot(data=data, height=1.05, aspect=2)
@@ -24,12 +33,22 @@ def pairplot(data, savefile=None):
 def barplot(data, labels, savefile=None):
     """
     Create a pair plot from input data and either show it or save it
-    :param data: array(columns) List of data points in the format
-    that is capable of being bar plotted
-    :param labels: List of names of bar labels
-    :param savefile: If True saving takes place, if False only visualization.
-     Arg is the filepath
-    :return:
+
+    Parameters
+    -------
+    data : array(columns)
+        List of data points in the format that is capable of being bar plotted
+
+    labels : array
+        List of names of bar labels
+
+    savefile : string or None
+        If string saving takes place, if None only visualization.
+        The argument is supposed to be a filepath together with the filename.
+
+    Returns
+    -------
+    Plots or saves the graph based on the savefile argument
     """
     # Create a bar plot
     plt.figure(figsize=(20, 20))
@@ -49,10 +68,18 @@ def barplot(data, labels, savefile=None):
 def simple_plot(data, savefile=None):
     """
     Create a simple plot from input data and either show it or save it
-    :param data: array(x, y)
-    :param savefile: If True saving takes place, if False only visualization.
-     Arg is the filepath
-    :return:
+
+    Parameters
+    -------
+    data : array(x, y)
+
+    savefile : string or None
+        If string saving takes place, if None only visualization.
+        The argument is supposed to be a filepath together with the filename.
+
+    Returns
+    -------
+    Plots or saves the graph based on the savefile argument
     """
 
     # Open a figure
