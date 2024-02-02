@@ -5,7 +5,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "snapy"
+name = "snapppy"
 version = "0.0.1"
 description = "Sample package for Python for statistical and numerical analysis"
 readme = "README.md"
@@ -38,6 +38,9 @@ dependencies = [
     "pytest-sugar",
     "pytest-cov"
 ]
+
+[tool.setuptools]
+packages = ["snapppy"]
 
 [project.urls]
 homepage = "https://github.com/g-stanic/ssciwr_stat_analysis"  # FIXME not shown by pip
