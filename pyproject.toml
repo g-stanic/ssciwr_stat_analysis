@@ -1,0 +1,44 @@
+[build-system]
+requires = [
+    "setuptools>=61",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snapy"
+version = "0.0.1"
+description = "Sample package for Python for statistical and numerical analysis"
+readme = "README.md"
+maintainers = [
+    { name = "Goran Stanic, Lynn Buchele, Tim Ortkamp", email = "goran.stanic@dkfz-heidelberg.de" },
+]
+requires-python = ">=3.8"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "seaborn",
+    "jupyter",
+    "pre-commit",
+    "nbstripout",
+    "flake8",
+    "flake8-nb",
+    "black",
+    "snakeviz",
+    "sphinx",
+    "myst-parser",
+    "sphinxcontrib-napoleon",
+    "pytest",
+    "pytest-sugar",
+    "pytest-cov"
+]
+
+[project.urls]
+homepage = "https://github.com/g-stanic/ssciwr_stat_analysis"  # FIXME not shown by pip
+documentation = "https://github.com/g-stanic/ssciwr_stat_analysis"
