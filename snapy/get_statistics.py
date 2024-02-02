@@ -46,8 +46,8 @@ def correlate(data, method="pearson", drop_cols=None, return_sorted=True):
     for i in range(corr_matrix.shape[0]):
         corr_matrix.iloc[i, i] = None
 
-    # Stack the correlation matrix into a table and reset the index
-    corr_table = corr_matrix.stack().reset_index()
+    # Stack the correlation matrix into a table, drop duplictes, and reset the index
+    corr_table = corr_matrix.stack().drop_duplicates().reset_index()
 
     # Set the column names for the table
     corr_table.columns = ["var0", "var1", "corr"]
